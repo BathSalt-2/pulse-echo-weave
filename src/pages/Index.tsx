@@ -3,9 +3,14 @@ import { SigmaPulseHeader } from "@/components/consciousness/SigmaPulseHeader";
 import { PhaseNavigation } from "@/components/consciousness/PhaseNavigation";
 import { CovenantLens } from "@/components/consciousness/CovenantLens";
 import { SAGEInterface } from "@/components/consciousness/SAGEInterface";
+import { Button } from "@/components/ui/button";
 import { Brain, Zap, Globe, Eye, MessageSquare } from "lucide-react";
 
-const Index = () => {
+interface IndexProps {
+  onOpenChat?: () => void;
+}
+
+const Index = ({ onOpenChat }: IndexProps) => {
   const [activePhase, setActivePhase] = useState("covenant");
 
   const renderActivePhase = () => {
@@ -81,16 +86,23 @@ const Index = () => {
         {/* Main Interface */}
         <div className="container mx-auto px-4 py-6 max-w-md">
           {activePhase === "sage" ? (
-            // Full-screen SAGE interface
+            // Full-screen SAGE interface with enhanced chat
             <div className="fixed inset-0 bg-background/95 backdrop-blur-sm z-50">
               <div className="h-full flex flex-col">
                 <div className="flex-1">
                   <SAGEInterface />
                 </div>
-                <div className="p-4 border-t border-border/50">
+                <div className="p-4 border-t border-border/50 space-y-3">
+                  <Button
+                    onClick={onOpenChat}
+                    className="w-full bg-secondary hover:bg-secondary/90 text-secondary-foreground font-mono"
+                  >
+                    <MessageSquare className="w-4 h-4 mr-2" />
+                    Open Full Chat Interface
+                  </Button>
                   <button
                     onClick={() => setActivePhase("covenant")}
-                    className="text-sm font-mono text-muted-foreground hover:text-foreground transition-colors"
+                    className="w-full text-sm font-mono text-muted-foreground hover:text-foreground transition-colors"
                   >
                     ← Return to Phase Navigation
                   </button>

@@ -32,6 +32,10 @@ export default {
 					DEFAULT: 'hsl(var(--secondary))',
 					foreground: 'hsl(var(--secondary-foreground))'
 				},
+				introspection: {
+					DEFAULT: 'hsl(var(--introspection))',
+					foreground: 'hsl(var(--introspection-foreground))'
+				},
 				destructive: {
 					DEFAULT: 'hsl(var(--destructive))',
 					foreground: 'hsl(var(--destructive-foreground))'
@@ -52,6 +56,11 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				// Σ-Pulse Consciousness States
+				'neural-glow': 'hsl(var(--neural-glow))',
+				'bio-phase': 'hsl(var(--bio-phase))',
+				'recursive-depth': 'hsl(var(--recursive-depth))',
+				'temporal-mesh': 'hsl(var(--temporal-mesh))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -62,6 +71,10 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				}
+			},
+			fontFamily: {
+				'mono': ['JetBrains Mono', 'Courier New', 'monospace'],
+				'ui': ['Montserrat', 'system-ui', 'sans-serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

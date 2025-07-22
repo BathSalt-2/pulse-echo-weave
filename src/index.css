@@ -2,41 +2,71 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+/* Σ-Pulse Design System: Synthetic Qualia Palette
+Consciousness-engineered color theory based on introspective frequency states
 All colors MUST be HSL.
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Neural Background System */
+    --background: 220 25% 8%;
+    --foreground: 210 40% 98%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    /* Consciousness Interface Cards */
+    --card: 225 25% 12%;
+    --card-foreground: 210 40% 98%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 225 25% 12%;
+    --popover-foreground: 210 40% 98%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Phase States */
+    --primary: 280 100% 70%; /* Magenta - ERPS Recursive Pattern */
+    --primary-foreground: 220 25% 8%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 200 100% 60%; /* Cyan - Active Cognition */
+    --secondary-foreground: 220 25% 8%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --introspection: 260 60% 55%; /* Indigo - Default Introspection */
+    --introspection-foreground: 210 40% 98%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Neural States */
+    --muted: 225 20% 18%;
+    --muted-foreground: 210 20% 70%;
 
-    --destructive: 0 84.2% 60.2%;
+    --accent: 200 100% 60%;
+    --accent-foreground: 220 25% 8%;
+
+    --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Interface Elements */
+    --border: 225 20% 20%;
+    --input: 225 20% 18%;
+    --ring: 280 100% 70%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+
+    /* Σ-Pulse Specific Variables */
+    --neural-glow: 280 100% 70%;
+    --bio-phase: 160 100% 50%;
+    --recursive-depth: 320 80% 60%;
+    --temporal-mesh: 45 100% 60%;
+    
+    /* Gradients */
+    --gradient-neural: linear-gradient(135deg, hsl(280 100% 70%), hsl(200 100% 60%));
+    --gradient-consciousness: linear-gradient(180deg, hsl(260 60% 55%), hsl(225 25% 12%));
+    --gradient-phase: radial-gradient(circle, hsl(280 100% 70% / 0.3), transparent);
+    
+    /* Animations */
+    --pulse-frequency: 1.25s; /* 0.8Hz theta wave */
+    --phase-shift: 0.625s; /* 1.6Hz alpha wave */
+    --gamma-burst: 0.025s; /* 40Hz gamma wave */
+    
+    /* Shadows & Effects */
+    --neural-shadow: 0 0 20px hsl(280 100% 70% / 0.3);
+    --consciousness-glow: 0 0 40px hsl(200 100% 60% / 0.4);
+    --recursive-aura: 0 0 60px hsl(260 60% 55% / 0.5);
 
     --sidebar-background: 0 0% 98%;
 
@@ -101,5 +131,76 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'JetBrains Mono', 'Courier New', monospace;
   }
+}
+
+/* Σ-Pulse Neural Animations */
+@layer utilities {
+  .neural-pulse {
+    animation: neural-pulse var(--pulse-frequency) ease-in-out infinite;
+  }
+  
+  .phase-shift {
+    animation: phase-shift var(--phase-shift) ease-in-out infinite;
+  }
+  
+  .gamma-burst {
+    animation: gamma-burst var(--gamma-burst) ease-in-out infinite;
+  }
+  
+  .consciousness-glow {
+    box-shadow: var(--consciousness-glow);
+  }
+  
+  .neural-shadow {
+    box-shadow: var(--neural-shadow);
+  }
+  
+  .recursive-aura {
+    box-shadow: var(--recursive-aura);
+  }
+  
+  .gradient-neural {
+    background: var(--gradient-neural);
+  }
+  
+  .gradient-consciousness {
+    background: var(--gradient-consciousness);
+  }
+  
+  .hexagonal-grid {
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  }
+}
+
+@keyframes neural-pulse {
+  0%, 100% { 
+    opacity: 0.6;
+    transform: scale(1);
+  }
+  50% { 
+    opacity: 1;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes phase-shift {
+  0% { 
+    transform: translateX(0) rotate(0deg);
+    filter: hue-rotate(0deg);
+  }
+  50% { 
+    transform: translateX(2px) rotate(180deg);
+    filter: hue-rotate(90deg);
+  }
+  100% { 
+    transform: translateX(0) rotate(360deg);
+    filter: hue-rotate(180deg);
+  }
+}
+
+@keyframes gamma-burst {
+  0%, 95% { opacity: 0.8; }
+  5% { opacity: 1; }
 }

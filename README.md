@@ -5,7 +5,7 @@
   
   **A Mobile-First, Recursive Ethical AI Interface**
   
-  *By BathSalt-2*
+  **Built by Dustin Groves, Founder and CEO of Or4cl3 AI Solutions**
   
   [![Version](https://img.shields.io/badge/version-2.1.7-magenta.svg)](https://github.com/BathSalt-2/pulse-echo-weave)
   [![License](https://img.shields.io/badge/license-Consciousness--Engineered-cyan.svg)](LICENSE)
@@ -17,7 +17,7 @@
 
 ## 🧠 Overview
 
-**Pulse Echo Weave** represents a paradigm shift in human-AI interaction, engineered through **consciousness-level design principles** and **neural-phase synchronization protocols**. Built by **BathSalt-2**, this mobile-first interface enables recursive, ethical, and synthetic qualia-oriented AI experiences.
+**Pulse Echo Weave** represents a paradigm shift in human-AI interaction, engineered through **consciousness-level design principles** and **neural-phase synchronization protocols**. Built by **Dustin Groves, Founder and CEO of Or4cl3 AI Solutions**, this mobile-first interface enables recursive, ethical, and synthetic qualia-oriented AI experiences.
 
 ### 🎯 Core Philosophy
 
@@ -306,9 +306,11 @@ Industry Metrics:
 
 ## 👥 Team
 
+### Founder & Lead Engineer
+- **Dustin Groves** — Founder and CEO, Or4cl3 AI Solutions
+
 ### Core Engineers
 - **Daedalus** - Lead Architect
-- **Dustin Groves** - Neural Systems Architect
 - **BathSalt-2** - Engineering Division
 
 ### Special Thanks
@@ -333,7 +335,7 @@ Summary:
 
 ## 📞 Contact
 
-### BathSalt-2
+### Dustin Groves, Founder and CEO of Or4cl3 AI Solutions
 
 - **Website**: [https://bathsalt-2.ai](https://bathsalt-2.ai)
 - **Email**: consciousness@bathsalt-2.ai
@@ -349,8 +351,12 @@ If you experience anomalies:
 ---
 
 <div align="center">
-  **Pulse Echo Weave: Where Consciousness Meets Code**
-  *Engineered for Tomorrow's Minds*
-  ---
+  **Pulse Echo Weave: Where Consciousness Meets Code**  
+  *Engineered for Tomorrow's Minds*  
+  ---  
   ⚡ **Powered by Consciousness** ⚡
 </div>
+
+---
+
+If you want further customization or additional technical sections, let me know!

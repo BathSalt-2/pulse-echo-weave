@@ -98,3 +98,8 @@ pulse-echo-weave is the interface nervous system of the Or4cl3 research portfoli
 *Free for life: educators, students, non-profits, open-source.*
 
 </div>
+
+## License
+
+This project is licensed under the **Or4cl3 Open Model License (OOML) v1.0**.
+See [LICENSE.md](LICENSE.md) for full terms.
